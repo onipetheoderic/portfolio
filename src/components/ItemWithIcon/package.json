@@ -1,0 +1,8 @@
+{
+    "name": "itemwithicon",
+    "version": "0.0.1",
+    "private": true,
+    "description": "This is the Normal Item headers",
+    "author": "Theoderic Onipe",
+    "main": "ItemWithIcon.js"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "logotext",
+    "version": "0.0.1",
+    "private": true,
+    "description": "This is the Upper portion logo text",
+    "author": "Theoderic Onipe",
+    "main": "logoText.js"
+}
