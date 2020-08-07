@@ -4,6 +4,8 @@ import LeftJumbotron from "./components/LeftJumbotron";
 import LeftAchievement from "./components/LeftAchievement";
 import CircularBg from './components/CircularBg';
 import FlyingImage from './components/FlyingImage';
+import BottomBg from './components/BottomBg';
+import Introdivider from './components/Introdivider';
 
 import circularreact from './assets/circlereact.png';
 import circularnode from './assets/circlenode.png';
@@ -38,7 +40,9 @@ function App() {
         <LeftAchievement expYears="5+" title="Years Experience" width="30" />
         <LeftAchievement expYears="21" title="Projects Deployed In over 3 Countries" width="100" />
       </div>
-    
+    <BottomBg>
+      <Introdivider />
+    </BottomBg>
       
     </div>
   );
