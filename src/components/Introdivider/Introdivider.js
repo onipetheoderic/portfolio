@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
 
     },
     cardSpace: {
-        width:'40%',
+        width:'45%',
        
         minHeight:300,
         display:'flex',
@@ -40,9 +40,9 @@ function Introdivider(props) {
                 
             <div className={classes.Introdivider}>
                 <div className={classes.cardSpace}>
-                    <RectangularCard />
-                    <RectangularCard />
-                    <RectangularCard />
+                    <RectangularCard title="Mobile App" count="15" description="Mobile Apps Created using React native and Flutter" />
+                    <RectangularCard title="Front-End App" count="14" description="Frontend Apps Created using Reactjs Redux and Context Api"/>
+                    <RectangularCard title="Completed Build" count="22" description="Applications Developed Completely by me"/>
                 </div>
                 <div className={classes.introSpace}>
                     <IntroText />

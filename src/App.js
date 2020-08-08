@@ -2,16 +2,23 @@ import React from 'react';
 import ItemHeader from "./components/ItemHeader";
 import LeftJumbotron from "./components/LeftJumbotron";
 import LeftAchievement from "./components/LeftAchievement";
-import CircularBg from './components/CircularBg';
+import CircularBg from './components/CircularBg/CircularBg';
 import FlyingImage from './components/FlyingImage';
 import BottomBg from './components/BottomBg';
 import Introdivider from './components/Introdivider';
+import LatestWorkPlayground from './components/LatestWorkPlayground';
+
+import LatestWorksCard from './components/LatestWorksCard';
 
 import circularreact from './assets/circlereact.png';
 import circularnode from './assets/circlenode.png';
 import circuleruby from './assets/circleruby.png';
 import circularfirebase from './assets/circularfirebase.png';
 import circlepython from './assets/circlepython.png';
+import lasre from './assets/lasre.png';
+import cohimsMobile from './assets/cohimsMobile.png';
+import hdmiImage from './assets/hdmireg.png';
+import afro from './assets/afro.png';
 
 
 function App() {
@@ -43,7 +50,14 @@ function App() {
     <BottomBg>
       <Introdivider />
     </BottomBg>
-      
+      <LatestWorkPlayground>
+      <LatestWorksCard appName="Cohims" image={hdmiImage} link="http://64.227.37.120:3300/hdmi" technologies={["nodeexpress", "mongodb", "handlebars"]}/>
+      <LatestWorksCard image={cohimsMobile} appName="Cohims Mobile" technologies={["react-native", "enzyme and jest", "redux", "contextApi"]}/>
+      <LatestWorksCard appName="Afronews" image={afro} link="https://play.google.com/store/apps/details?id=com.afronews" technologies={["react-native", "enzyme and jest", "firebase", "redux"]}/>
+      <LatestWorksCard image={lasre} link="https://lasretrad.landlordstech.com" appName="Lasretrad" technologies={["react", "redux", "contextApi"]}/>
+
+
+      </LatestWorkPlayground>
     </div>
   );
 }
