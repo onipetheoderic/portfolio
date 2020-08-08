@@ -15,6 +15,9 @@ import MailOutline from '@material-ui/icons/MailOutline';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faBars, faCode, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -23,8 +26,19 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
+  iconWithText: {
+    fontSize:12,
+    marginLeft:20,
+    fontFamily: 'Cousine'
+  },
+  iconText: {
+    fontSize:10,
+    paddingLeft:5,
+    fontFamily: 'Cousine'
+  },
   iconBtn: {
       marginRight:40,
+      fontFamily: 'Cousine'
   },
   titleBox: {
     marginLeft:40,
@@ -50,7 +64,10 @@ const useStyles = makeStyles((theme) => ({
       display: 'block',
     },
   },
- 
+  linkStyle: {
+    color:'white',
+    textDecoration:'none'
+  },
   inputRoot: {
     color: 'inherit',
   },
@@ -67,7 +84,13 @@ const useStyles = makeStyles((theme) => ({
   itemStyle: {
     fontSize:12,
     marginLeft:40,
-    fontFamily: 'Cousine'
+    color:'white',
+    
+  },
+  linkItemStyle: {
+    textDecoration:'none',
+    fontFamily: 'Cousine',
+    color:'white',
   },
   appStyle: {
     backgroundColor:'transparent',
@@ -194,19 +217,17 @@ export default function PrimarySearchAppBar() {
           <div className={classes.grow} />
           <Box className={classes.titleBox}>
             <Typography className={classes.itemStyle} variant="h6" noWrap>
-                Services
+                Who am I
             </Typography>
             
             <Typography className={classes.itemStyle} variant="h6" noWrap>
                 Works
             </Typography>
 
-            <Typography className={classes.itemStyle} variant="h6" noWrap>
-                Testimonies
-            </Typography>
             
+            {/* <a href="mailto:info@Lasretrad.com" style={{textDecoration:'none', color:'inherit'}}> Contact </a> */}
             <Typography className={classes.itemStyle} variant="h6" noWrap>
-                Contracts
+               <a href="mailto:onipetheoderic@gmail.com" target="blank" className={classes.linkItemStyle}>Contracts</a>
             </Typography>
           </Box>
           <div className={classes.grow} />
@@ -214,17 +235,24 @@ export default function PrimarySearchAppBar() {
 
           <div className={classes.sectionDesktop}>
           
-           
+         
             <IconButton
               edge="end"
               aria-label="account of current user"
-              aria-controls={menuId}
-              aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
+             
               className={classes.iconBtn}
               color="inherit"
             >
-              <MailOutline />
+                 <FontAwesomeIcon icon={faGithub} className={classes.iconWithText} />
+                 <span className={classes.iconText}>
+                   <a className={classes.linkStyle} 
+                   href="https://github.com/onipetheoderic" target="blank">github</a></span>
+                  
+                  <FontAwesomeIcon icon={faLinkedin} className={classes.iconWithText} />
+                  <span className={classes.iconText}>
+                    <a className={classes.linkStyle} 
+                    target="blank"
+                    href="https://linkedin.com/in/onipe-theoderic-987642158">linkedIn</a></span>
             </IconButton>
           </div>
           <div className={classes.sectionMobile}>
