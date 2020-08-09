@@ -1,7 +1,7 @@
 import React from 'react';
 import { fade, makeStyles } from '@material-ui/core/styles';
 
-
+import MouseParticles from "react-mouse-particles";
 import { CircleBg } from './styles/miniStyles';
 import Typing from 'react-typing-animation';
 
@@ -37,6 +37,16 @@ function CircularBg({expYears, title, width}) {
     return (
                 
             <CircleBg>
+               <MouseParticles
+          g={2.3}
+          num={1}
+          radius={8}
+          life={0.8}
+          v={1.2}
+          color="random"
+          alpha={0.16}
+          level={6}
+        />
                <Typing>
                <h1 className={classes.typingStyle}>I am a Magacian....</h1>
                 <Typing.Delay ms={1000} />

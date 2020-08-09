@@ -34,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
     
     [theme.breakpoints.up('sm')]: {
       display: 'block',
+      fontWeight:'bold'
     },
   },
     linkStyle: {
@@ -204,7 +205,7 @@ export default function PrimarySearchAppBar() {
         <Toolbar>
         
           <Typography className={classes.title} variant="h6" >
-          Theoderic
+          Theoderic <span style={{fontWeight:"400"}}>Onipe</span>
           </Typography>
           <div className={classes.search}>
            
