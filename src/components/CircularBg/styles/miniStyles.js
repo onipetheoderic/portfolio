@@ -4,6 +4,9 @@ export const CircleBg = styled.div`
     width: 42%;
     position: absolute;
     height:80%;
+    align-items:center;
+    display: flex;
+    justify-content:center;
     top:200px;
     z-index:-1;
     right:100px;

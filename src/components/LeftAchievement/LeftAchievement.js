@@ -1,4 +1,5 @@
 import React from 'react';
+import {Spring} from 'react-spring/renderprops';
 import { fade, makeStyles } from '@material-ui/core/styles';
 
 
@@ -81,7 +82,11 @@ function LeftAchievement({expYears, title, width}) {
         <div className={classes.achieve}>            
             <div className={classes.achievementCont}>
                 <h1 className={classes.singleAchievementText}>
-                    {expYears}
+                <Spring
+  from={{ number: 1 }}
+  to={{ number: expYears }}>
+  {props => <div>{props.number}</div>}
+</Spring>
                 </h1>
                 <h1
                  style={{fontSize:12,

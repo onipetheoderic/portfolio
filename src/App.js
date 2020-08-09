@@ -1,4 +1,5 @@
 import React from 'react';
+
 import ItemHeader from "./components/ItemHeader";
 import LeftJumbotron from "./components/LeftJumbotron";
 import LeftAchievement from "./components/LeftAchievement";
@@ -47,7 +48,7 @@ function App() {
       />
 
       <div style={{display:'flex', flexDirection:'row', marginLeft:'17%'}}>
-        <LeftAchievement expYears="5+" title="Years Experience" width="30" />
+        <LeftAchievement expYears="6" title="Years Experience" width="30" />
         <LeftAchievement expYears="21" title="Projects Deployed In over 3 Countries" width="100" />
       </div>
     <BottomBg>
