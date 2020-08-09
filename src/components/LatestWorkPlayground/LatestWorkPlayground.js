@@ -23,13 +23,21 @@ const useStyles = makeStyles((theme) => ({
         flexWrap: 'wrap',
         justifyContent:'space-between'
         
-    }
+    },
+    cardTStyle: {
+        width:'48%',                     
+        height:400, 
+        marginTop:10,
+        [theme.breakpoints.down('sm')]: {
+            width:'100%'
+          }, 
+    },
 
 }))
 
 
 function LatestWorkPlayground(props) {
-    const classes = useStyles();
+    
 
     const positioner = (itemIndex) => {
         if(itemIndex%2==0){
@@ -37,9 +45,10 @@ function LatestWorkPlayground(props) {
         }
         else return 0
     }
+    const classes = useStyles();
 
     return (
-    <div style={{backgroundColor:'#25262a'}}>
+    <div style={{backgroundColor:'#25262a', boxSizing:'border-box'}}>
         <div>
         
             <div style={{ backgroundColor:'#25262a', display:'flex',alignItems:'center', justifyContent:'center'}}>
@@ -50,8 +59,7 @@ function LatestWorkPlayground(props) {
                 
               <div className={classes.latestPlaygroundRow}>
                   {props.children.map((card, index)=>(
-                    <div style={{width:'48%', marginTop:positioner(index), 
-                    height:400, marginTop:10}}>
+                    <div className={classes.cardTStyle}>
                     {card}
                     </div>
                   ))}

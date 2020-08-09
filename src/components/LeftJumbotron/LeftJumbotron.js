@@ -21,12 +21,25 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: 'Roboto Mono',
         fontSize:46,
         color:'white',      
+        [theme.breakpoints.down('sm')]: {
+           fontSize:30,
+           textStyle:'center',
+    
+          }, 
     },
     headerTextCont: {
-        width:'40%'
+        width:'40%',
+        [theme.breakpoints.down('sm')]: {
+            width:'90%',
+            flexWrap:'wrap'
+          }, 
     },
     pTextCont: {
-        width: '30%'
+        width: '30%',
+        [theme.breakpoints.down('sm')]: {
+            width:'90%',
+            flexWrap:'wrap'
+          }, 
     },
     coloredBgText: {
         backgroundColor:'#63f3ac',
@@ -40,6 +53,14 @@ const useStyles = makeStyles((theme) => ({
     jumbotron: {
         marginTop:150,
         marginLeft:'20%',
+        [theme.breakpoints.down('sm')]: {
+            marginLeft:'auto',
+            marginRight:'auto',
+            width:'90%',
+            justifyContent:'center',
+            alignItems:'center',
+            flexWrap:'wrap'
+          }, 
         
     },
     pText: {
@@ -49,7 +70,11 @@ const useStyles = makeStyles((theme) => ({
     },
     uTextCont: {
         marginTop:100,
-        width: '30%'
+        width: '30%',
+        [theme.breakpoints.down('sm')]: {
+            width:'90%',
+            flexWrap:'wrap'
+          }, 
     },
     uText: {
         color: '#63f3ac',

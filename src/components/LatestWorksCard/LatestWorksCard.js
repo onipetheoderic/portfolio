@@ -25,6 +25,32 @@ const useStyles = makeStyles((theme) => ({
         fontSize:46,
         color:'white',      
     },
+    doubleWork: {
+      width:"80%", 
+      height:290, 
+      outline:'none', 
+      marginLeft:'20%',
+      borderTopLeftRadius:30,
+      [theme.breakpoints.down('sm')]: {
+        width:'100%',
+        marginLeft:0,
+        height:200
+      }, 
+    },
+    techStyle: {
+      flexDirection:'row', 
+      justifyContent:'space-between',
+      flexWrap:'wrap'
+    },
+    parentStyle: {
+      display:'flex', 
+      flexDirection:'row', 
+      paddingTop:30, 
+      paddingLeft:30,
+      flexWrap: 'wrap',
+      
+    }
+
    
 
 }))
@@ -35,9 +61,9 @@ function CircularBg({technologies, appName, link, image}) {
     return (
                 
             <RectangularCard>
-           <div style={{display:'flex', flexDirection:'row', paddingTop:30, paddingLeft:30}}>
+           <div className={classes.parentStyle}>
              <h3 style={{color:'white', flex:1}}>{appName}</h3>
-             <div style={{flexDirection:'row', justifyContent:'space-between'}}>
+             <div className={classes.techStyle}>
                {technologies.map((tech) => (
 
                
@@ -50,7 +76,7 @@ function CircularBg({technologies, appName, link, image}) {
              </div>
              
            </div>
-            <img src={image} width="80%" height={290} style={{outline:'none', marginLeft:'20%',borderTopLeftRadius:30}}/>
+            <img src={image} className={classes.doubleWork}/>
             </RectangularCard>
        
         

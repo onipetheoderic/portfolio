@@ -23,10 +23,11 @@ import afro from './assets/afro.png';
 
 function App() {
   return (
-    <div className="App">
-        <CircularBg />
-      <ItemHeader />
-      <LeftJumbotron />
+    <div style={{overflow:'hidden'}}>
+    
+       <CircularBg />
+      <ItemHeader /> 
+       <LeftJumbotron />
       <FlyingImage image={circuleruby} topPosition={200} 
       rightPosition={80} width={200} height={200}/>
 
@@ -57,7 +58,7 @@ function App() {
       <LatestWorksCard image={lasre} link="https://lasretrad.landlordstech.com" appName="Lasretrad" technologies={["react", "redux", "contextApi"]}/>
 
 
-      </LatestWorkPlayground>
+      </LatestWorkPlayground> 
     </div>
   );
 }

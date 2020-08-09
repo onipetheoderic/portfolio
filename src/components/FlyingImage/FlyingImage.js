@@ -25,7 +25,11 @@ const useStyles = makeStyles((theme) => ({
         fontSize:46,
         color:'white',      
     },
-   
+   parentDisplayStyle: {
+    [theme.breakpoints.down('sm')]: {
+      display:'none'
+    }, 
+   }
 
 }))
 
@@ -33,10 +37,12 @@ const useStyles = makeStyles((theme) => ({
 function CircularBg({image, topPosition, rightPosition, height, width}) {
     const classes = useStyles();
     return (
-                
-            <div style={{position:'absolute', top:topPosition, right:rightPosition }}>
+            <div className={classes.parentDisplayStyle}>
+ <div style={{position:'absolute', top:topPosition, right:rightPosition }}>
                 <img src={image} width={width} height={height} />
             </div>
+            </div>
+           
        
         
     )

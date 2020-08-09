@@ -12,21 +12,30 @@ const useStyles = makeStyles((theme) => ({
      
         alignSelf:'center',
         display:'flex',
-        justifyContent:'space-between'
+        justifyContent:'space-between',
+        [theme.breakpoints.down('sm')]: {
+            width:'90%',
+            flexWrap:'wrap'
+          }, 
 
     },
     cardSpace: {
         width:'45%',
-       
         minHeight:300,
         display:'flex',
         flexDirection:'column',
         justifyContent:'center',
         alignItems:'center',
+        [theme.breakpoints.down('sm')]: {
+            width:'100%'
+          }, 
     },
     introSpace: {
         width:'40%',
         minHeight:300,
+        [theme.breakpoints.down('sm')]: {
+            width:'100%'
+          }, 
     }
        
 

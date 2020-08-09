@@ -12,10 +12,15 @@ const useStyles = makeStyles((theme) => ({
     pTitle: {
         fontSize:20,
         color:'#63f3ac',
+        
     },
     recContainer: {
         marginLeft:50,
-        marginTop:23
+        marginTop:23,
+        [theme.breakpoints.down('sm')]: {
+            marginLeft:20,
+            marginTop:20
+          }, 
     },
     iconDashboardText: {
         fontSize:15,
