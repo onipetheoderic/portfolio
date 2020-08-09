@@ -59,16 +59,24 @@ function CircularBg({expYears, title, width}) {
                 <h1 className={classes.typingStyle}>Redux and ContextApi</h1>
                 <Typing.Reset count={9} delay={500} />
                 <h1 className={classes.typingStyle}>Firebase</h1>
-                <Typing.Reset count={10} delay={500} />
+                <Typing.Reset count={11} delay={500} />
                 <h1 className={classes.typingStyle}>TDD</h1>
-                <Typing.Reset count={10} delay={500} />
+                <Typing.Reset count={12} delay={500} />
                 <h1 className={classes.typingStyle}>Ruby on Rails</h1>
-                <Typing.Reset count={10} delay={500} />
+                <Typing.Reset count={13} delay={500} />
                 <h1 className={classes.typingStyle}>Python</h1>
-                <Typing.Reset count={10} delay={500} />
+                <Typing.Reset count={14} delay={500} />
                 <h1 className={classes.typingStyle}>Webscrapping</h1>
-                <Typing.Reset count={10} delay={500} />
+                <Typing.Reset count={15} delay={500} />
                 <h1 className={classes.typingStyle}>Machine Learning</h1>
+                <Typing.Reset count={16} delay={500} />
+                <h1 className={classes.typingStyle}>Mongo Db</h1>
+                <Typing.Reset count={17} delay={500} />
+                <h1 className={classes.typingStyle}>MySql</h1>
+                <Typing.Reset count={18} delay={500} />
+                <h1 className={classes.typingStyle}>Postgres</h1>
+                <Typing.Reset count={19} delay={500} />
+                <h1 className={classes.typingStyle}>Docker</h1>
               </Typing>
              
             </CircleBg>
