@@ -76,6 +76,10 @@ const useStyles = makeStyles((theme) => ({
             flexWrap:'wrap'
           }, 
     },
+    linkStyle: {
+        color:'white',
+        textDecoration:'none'
+      },
     uText: {
         color: '#63f3ac',
         textDecoration:'underline',
@@ -100,7 +104,7 @@ function LeftJumbotron({coloredBgText, bigHeaderText, description, underlinedTex
             </div>
 
             <div className={classes.uTextCont}>
-                <p className={classes.uText}>Lets Chat </p>
+                <p className={classes.uText}> <a href="https://wa.me/2347039148866" target="blank" className={classes.uText}>Lets Chat </a></p>
             </div>
                  
         </div>

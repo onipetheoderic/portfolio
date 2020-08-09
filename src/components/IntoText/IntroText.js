@@ -57,7 +57,7 @@ function CircularBg({theme, title, subtitle, content}) {
     const classes = useStyles();
     return (
                 
-            <div className={classes.introContainer}>
+            <div id="whoami" className={classes.introContainer}>
                 <p className={classes.theme}>Who Am I?</p>
                 <p className={classes.title}>Hello! I am Theoderic Onipe</p>
                 <p className={classes.subtitle}>Every great Design Begins with an even better story</p>

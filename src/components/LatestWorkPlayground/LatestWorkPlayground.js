@@ -48,7 +48,7 @@ function LatestWorkPlayground(props) {
     const classes = useStyles();
 
     return (
-    <div style={{backgroundColor:'#25262a', boxSizing:'border-box'}}>
+    <div id="works" style={{backgroundColor:'#25262a', boxSizing:'border-box'}}>
         <div>
         
             <div style={{ backgroundColor:'#25262a', display:'flex',alignItems:'center', justifyContent:'center'}}>

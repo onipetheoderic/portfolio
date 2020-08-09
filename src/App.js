@@ -19,6 +19,8 @@ import lasre from './assets/lasre.png';
 import cohimsMobile from './assets/cohimsMobile.png';
 import hdmiImage from './assets/hdmireg.png';
 import afro from './assets/afro.png';
+import nikeshop from './assets/nike.jpg';
+import food from './assets/food.png';
 
 
 function App() {
@@ -56,6 +58,10 @@ function App() {
       <LatestWorksCard image={cohimsMobile} appName="Cohims Mobile" technologies={["react-native", "enzyme and jest", "redux", "contextApi"]}/>
       <LatestWorksCard appName="Afronews" image={afro} link="https://play.google.com/store/apps/details?id=com.afronews" technologies={["react-native", "enzyme and jest", "firebase", "redux"]}/>
       <LatestWorksCard image={lasre} link="https://lasretrad.landlordstech.com" appName="Lasretrad" technologies={["react", "redux", "contextApi"]}/>
+
+
+      <LatestWorksCard image={nikeshop} link=" http://theoderic.website/android_apps/nikeshop.apk" appName="Nike Shop" technologies={["react-native", "contextApi"]}/>
+      <LatestWorksCard image={food} link="http://theoderic.website/android_apps/app-release.apk" appName="Food Order App" technologies={["react-native", "contextApi"]}/>
 
 
       </LatestWorkPlayground> 

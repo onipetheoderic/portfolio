@@ -49,7 +49,11 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft:30,
       flexWrap: 'wrap',
       
-    }
+    },
+    linkStyle: {
+      color:'white',
+      textDecoration:'none'
+    },
 
    
 
@@ -62,7 +66,11 @@ function CircularBg({technologies, appName, link, image}) {
                 
             <RectangularCard>
            <div className={classes.parentStyle}>
-             <h3 style={{color:'white', flex:1}}>{appName}</h3>
+             <h3 style={{color:'white', flex:1}}>
+               <a href={link} className={classes.linkStyle}>
+               {appName}
+               </a>
+              </h3>
              <div className={classes.techStyle}>
                {technologies.map((tech) => (
 
