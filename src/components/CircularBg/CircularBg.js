@@ -20,13 +20,21 @@ const useStyles = makeStyles((theme) => ({
       display:'flex',
       flexDirection:'row'
     },
+    typingText: {
+      [theme.breakpoints.down('sm')]: {
+        display: 'none',
+      },
+    },
     headerText: {
         fontFamily: 'Roboto Mono',
         fontSize:46,
         color:'white',      
     },
    typingStyle: {
-    color:'white',textAlign:'center', alignSelf:'center', fontFamily:'Cousine'
+    color:'white',textAlign:'center', alignSelf:'center', fontFamily:'Cousine',
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
    }
 
 }))
@@ -36,17 +44,8 @@ function CircularBg({expYears, title, width}) {
     const classes = useStyles();
     return (
                 
-            <CircleBg>
-               <MouseParticles
-          g={2.3}
-          num={1}
-          radius={8}
-          life={0.8}
-          v={1.2}
-          color="random"
-          alpha={0.16}
-          level={6}
-        />
+            <CircleBg className={classes.typingText}>
+            
                <Typing>
                <h1 className={classes.typingStyle}>I am a Magacian....</h1>
                 <Typing.Delay ms={1000} />
@@ -88,7 +87,7 @@ function CircularBg({expYears, title, width}) {
                 <Typing.Reset count={19} delay={500} />
                 <h1 className={classes.typingStyle}>Docker</h1>
               </Typing>
-             
+          
             </CircleBg>
        
         
